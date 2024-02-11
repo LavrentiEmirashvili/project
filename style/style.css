@@ -48,15 +48,6 @@ main section.banner div.overlay article h2 {
   font-family: var(--secondary-font);
 }
 
-main div.overlay {
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
 .home {
   font-family: var(--primary-font);
   font-weight: 600;
@@ -142,14 +133,20 @@ main section {
 }
 
 .banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
   height: 1000px;
   background-image: url("https://static.wixstatic.com/media/c837a6_cfc799f5f49a4c35968d9bbb66d0277d~mv2.jpg/v1/fill/w_980,h_884,al_t,q_85,usm_0.66_1.00_0.01,enc_auto/c837a6_cfc799f5f49a4c35968d9bbb66d0277d~mv2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  position: relative;
 }
-
+main section.banner div.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 footer {
   bottom: 0;
   height: 70px;
@@ -309,41 +306,28 @@ main div.div5 form {
 }
 main div.bg {
   background-color: #f5f3f0;
-  width: 100%;
+  width: calc(100% - 6em);
 }
 main div.bg div {
-  display: flexbox !important;
+  display: flex !important;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-left: 3em;
+  margin-top: 2em;
+  justify-content: space-between;
 }
-main div.bg div h3 {
+main div.bg h3 {
   font-size: 16px;
   font-family: var(--secondary-font);
   margin-top: 3em;
   margin-left: 6em;
   font-weight: 300;
 }
-.imgbg1 {
-  width: 40%;
-  background-image: url(https://static.wixstatic.com/media/84770f_05f515e0fc224b8491e6525c9e7db342~mv2.jpg/v1/fit/w_898,h_699,q_90/84770f_05f515e0fc224b8491e6525c9e7db342~mv2.webp);
+img {
+  width: 90%;
+  margin-bottom: 3em;
 }
-.imgbg2 {
-  width: 40%;
-  background-image: url(https://static.wixstatic.com/media/84770f_3df0eabbf9e9490e961dbfcdaf525a2d~mv2.jpg/v1/fit/w_898,h_699,q_90/84770f_3df0eabbf9e9490e961dbfcdaf525a2d~mv2.webp);
-}
-.imgbg3 {
-  width: 40%;
-  background-image: url(https://static.wixstatic.com/media/84770f_85150049880c48a58aa99f0b86bee7ac~mv2.jpg/v1/fit/w_898,h_699,q_90/84770f_85150049880c48a58aa99f0b86bee7ac~mv2.webp);
-}
-.imgbg4 {
-  width: 40%;
-  background-image: url(https://static.wixstatic.com/media/84770f_d77196cadfa7496c984a9cb4a53b4ad1~mv2.jpg/v1/fit/w_898,h_699,q_90/84770f_d77196cadfa7496c984a9cb4a53b4ad1~mv2.webp);
-}
-.imgbg5 {
-  width: 40%;
-  background-image: url(https://static.wixstatic.com/media/84770f_347b5bb406034612abef241703e0b93d~mv2.jpg/v1/fit/w_898,h_699,q_90/84770f_347b5bb406034612abef241703e0b93d~mv2.webp);
-}
-.imgbg6 {
-  width: 40%;
-  background-image: url(https://static.wixstatic.com/media/84770f_2e9e6fb4836e4728b5cfbb34e5b4b080~mv2.jpg/v1/fit/w_898,h_699,q_90/84770f_2e9e6fb4836e4728b5cfbb34e5b4b080~mv2.webp);
+
+main {
+  padding-right: 3em;
 }
