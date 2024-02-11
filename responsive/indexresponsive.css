@@ -1,0 +1,45 @@
+@media only screen and (max-width: 800px) {
+  header span a.home {
+    font-size: 20px;
+  }
+  main {
+    padding: 0;
+  }
+  footer {
+    margin-left: 0;
+  }
+  footer span.footer-text {
+    font-size: 16px;
+  }
+  svg {
+    width: 30px;
+    height: 20px;
+  }
+  header nav ul {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 700px) {
+  header span a.socials {
+    display: none;
+  }
+  header span a.home {
+    text-align: center;
+  }
+  main section.banner div.overlay article h1 {
+    font-size: 50px;
+  }
+  main section.banner div.overlay article h2 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 210px) {
+  header {
+    padding: 0;
+  }
+  footer span.footer-text {
+    font-size: 10px;
+  }
+}

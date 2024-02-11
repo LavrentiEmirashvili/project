@@ -21,6 +21,8 @@
       src="https://kit.fontawesome.com/80ce3f39ae.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="./responsive/aboutresponsive.css" />
+    <link rel="stylesheet" href="./tearsheets.html" />
   </head>
   <body>
     <header>
@@ -53,13 +55,13 @@
             <a href="#">STORIES</a>
           </li>
           <li>
-            <a href="#">TEAR SHEETS</a>
+            <a href="./tearsheets.html">TEAR SHEETS</a>
           </li>
           <li>
-            <a href="./about.html">ABOUT</a>
+            <a href="./about.html" class="active">ABOUT</a>
           </li>
           <li>
-            <a href="#">CONTACT</a>
+            <a href="./about.html" class="active">CONTACT</a>
           </li>
         </ul>
       </nav>
@@ -131,17 +133,32 @@
       </div>
       <div class="div5">
         <h3>CONTACT</h3>
-        <div class="form"><form action="https://api.everrest.educata.dev/echo/html" method="post"></div>
-          <div><p>First Name</p>
-          <input type="text" class="name" name="სახელი" />
-         <div> <p>Last Name</p>
-          <input type="text" class="lastname" name="გვარი" /></div>
-         <div> <p>Email*</p>
-          <input type="email" class="mail" name="email" /></div>
-         <div> <p>Type your message here...</p>
-          <input type="text" class="message" name="წერილი" /></div>
-          <div><button>SUMBIT</button></div>
-        </form>
+        <div class="form">
+          <form
+            action="https://api.everrest.educata.dev/echo/html"
+            method="post"
+          >
+            <div class="inputdiv">
+              <p>First Name</p>
+              <input type="text" class="name" name="name" required />
+            </div>
+            <div class="inputdiv">
+              <p>Last Name</p>
+              <input type="text" class="lastname" name="lastname" required />
+            </div>
+            <div class="inputdiv">
+              <p>Email*</p>
+              <input type="email" class="mail" name="email" required />
+            </div>
+            <div>
+              <p>Type your message here...</p>
+              <input type="text" class="message" name="message" required />
+            </div>
+            <div>
+              <button style="font-family: var(--primary-font)">SUMBIT</button>
+            </div>
+          </form>
+        </div>
       </div>
     </main>
     <footer>
